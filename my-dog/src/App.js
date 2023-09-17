@@ -2,7 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import './App.css';
 import NavBar from './components/NavBar';
+import SearchBar from './components/SearchBar';
 import React from 'react';
+
 
 function PhoneFrame({ children }) {
   return (
@@ -19,6 +21,7 @@ function App() {
     <PhoneFrame>
     <div className="container">
       <NavBar />
+      <SearchBar />
     </div>
     </PhoneFrame>
   );
