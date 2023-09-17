@@ -3,6 +3,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import './App.css';
 import NavBar from './components/NavBar';
 import SearchBar from './components/SearchBar';
+import PostList from './components/PostList';
 import React from 'react';
 
 
@@ -22,6 +23,7 @@ function App() {
     <div className="container">
       <NavBar />
       <SearchBar />
+      <PostList/>
     </div>
     </PhoneFrame>
   );
