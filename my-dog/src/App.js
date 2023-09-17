@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 import './App.css';
+import NavBar from './components/NavBar';
+import React from 'react';
+
+function PhoneFrame({ children }) {
+  return (
+    <div className="phone-frame">
+      <div className="content">
+        {children}
+      </div>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <PhoneFrame>
+    <div className="container">
+      <NavBar />
     </div>
+    </PhoneFrame>
   );
 }
 
